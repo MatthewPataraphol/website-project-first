@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Location.html">Location</a></li>
+        <li><a href="Contact.html"><strong>Contact</strong></a></li>
+      </ul>
+    </nav>
+    <h1 style="position: absolute;">Contact Me</h1>
+  </header>
+
+  <section class="uppersection page-section">
+    <div class="content-box">
+      <h2>Get in Touch</h2>
+      <p>Email: <a href="mailto:placeholder@email.com">pataraphol.kee@gmail.com</a></p>
+      <p>Phone: <a href="tel:+12609990059">+1 (260) 999-0059</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/patarapholkeeraswangporn" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/patarapholkeeraswangporn</a></p>
+      <p>GitHub: <a href="https://github.com/MatthewPataraphol" target="_blank" rel="noopener noreferrer">github.com/MatthewPataraphol</a></p>
+      <form id="contact-form" class="contact-form" method="POST" action="/contact">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" required></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+      <div id="form-status" style="margin-top: 10px; color: lightgreen;"></div>
+    </div>
+  </section>
+
+  <footer>
+    **Original website built by Pataraphol Keeraswangporn**
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

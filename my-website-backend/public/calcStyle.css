@@ -1,0 +1,94 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(102, 102, 102);
+    background-image: url("Images/notebookpaper.jpg");
+    background-size: 100%;
+}
+
+.calcBorder{
+    background-color: rgb(141, 141, 141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 480px;
+    height: 680px;
+
+    margin: auto;
+    margin-top: 20px;
+
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.backbutton{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    background-color: rgba(240, 161, 217, 0.75);
+    border-radius: 10%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    background-color: rgb(248, 252, 255, .75);
+    border-radius: 10%;
+}
+
+.calculator-grid > button:hover {
+    background-color: rgb(248, 252, 255, .9);
+}
+
+.calculator-grid > button:active {
+    background-color: rgb(248, 252, 255);
+}
+
+.spantwo{
+    grid-column: span 2;
+}
+
+.output{
+    color: rgb(169, 169, 170);
+    grid-column: 1 / -1;
+    background-color: rgb(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 3%;
+    border: 2px solid rgb(255, 255, 255);
+}
+.output .previous-operand{
+    color: rgb(169, 169, 170, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand{
+    font-size: 2.5rem;
+    
+}
